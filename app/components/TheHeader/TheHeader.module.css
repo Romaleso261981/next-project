@@ -1,11 +1,12 @@
 .main {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-  width: 1440px;
+  padding: 20px 50px;
+  width: 100vw;
   height: 60px;
-  background-color: #d3dbf6;
+  background-color: #374B88;
 }
 
 /* .description {

@@ -1,6 +1,7 @@
 import React from 'react'
 import MainLogo from '../MainLogo/MainLogo'
 import Navigation from "../Navigation/Navigation";
+import Button from "../Button/Button";
 import styles from "./TheHeader.module.css";
 
 function TheHeader() {
@@ -8,6 +9,7 @@ function TheHeader() {
     <div className={styles.main}>
       <MainLogo />
       <Navigation />
+      <Button text="Вхід" />
     </div>
   );
 }

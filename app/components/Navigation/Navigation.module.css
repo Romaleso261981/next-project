@@ -1,0 +1,10 @@
+.navWrapper {
+  margin-left: 5px;
+}
+.link {
+  margin-left: 40px;
+  font-weight: 600;
+  font-style: 16px;
+  line-height: 24;
+  color: aliceblue;
+}
