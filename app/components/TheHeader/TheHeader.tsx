@@ -4,6 +4,12 @@ import Navigation from "../Navigation/Navigation";
 import Button from "../Button/Button";
 import styles from "./TheHeader.module.css";
 
+const navItems = [
+  { label: "Новий чат", href: "/" },
+  { label: "Чат кімнати", href: "/" },
+  { label: "Підтримка", href: "/" },
+];
+
 function TheHeader() {
   return (
     <div className={styles.main}>
