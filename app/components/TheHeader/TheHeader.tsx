@@ -10,12 +10,12 @@ const navItems = [
   { label: "Підтримка", href: "/" },
 ];
 
-function TheHeader() {
+function TheHeader({ setIsPopUpFalse }: { setIsPopUpFalse: () => void }) {
   return (
     <div className={styles.main}>
       <MainLogo />
       <Navigation />
-      <Button text="Вхід" />
+      <Button setIsPopUpFalse={setIsPopUpFalse} text="Вхід" />
     </div>
   );
 }

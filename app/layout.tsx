@@ -1,3 +1,5 @@
+"use client";
+
 // import { useEffect } from "react";
 import "./globals.css";
 import React from "react";
@@ -5,6 +7,7 @@ import { Inter } from "next/font/google";
 import TheFooter from "./components/TheFooter/TheFooter";
 import TheHeader from "./components/TheHeader/TheHeader";
 import PopUpAutorisation from "./components/popUp/PopUpAutorisation";
+import IsAuthPopUp from "./components/popUp/IsAuthPopUp";
 import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,20 +22,46 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // const [isPopUp, setIsPopUp] = React.useState(false);
+  const [isPopUp, setIsPopUp] = React.useState(false);
+  const [isAuthPopUp, setisAuthPopUp] = React.useState(false);
 
-  // function setIsPopUpFalse() {
-  //   setIsPopUp(false);
-  // }
+
+  function setIsPopUpOpen() {
+    setIsPopUp(true);
+  }
+  function setIsPopUpCloset() {
+    setIsPopUp(false);
+    setisAuthPopUp(true);
+    setIsPopUpAuth();
+  }
+
+
+  function setIsPopUpAuth() {
+    setTimeout(() => {
+      localStorage.setItem("isAuth", "true");
+      setisAuthPopUp(false);
+     }, 2000);
+  }
+
+  
 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TheHeader />
+        <TheHeader setIsPopUpFalse={setIsPopUpOpen} />
         {children}
         <TheFooter />
-        {false && (
-          <PopUpAutorisation title="Щоб продовжити далі, авторизуйтеся!" />
+        {isPopUp && (
+          <PopUpAutorisation
+            setIsPopUpFalse={setIsPopUpCloset}
+            title="Щоб продовжити далі, авторизуйтеся!"
+          />
+        )}
+        {isAuthPopUp && (
+          <IsAuthPopUp
+            text="Ви будете перенаправлені на головну сторінку"
+            title="Дякуємо що авторизувались"
+          />
         )}
       </body>
     </html>

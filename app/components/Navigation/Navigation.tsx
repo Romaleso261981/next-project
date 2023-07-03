@@ -26,13 +26,13 @@ function Navigation() {
       {navItems.map((link) => {
         const isActive = pathname === link.href;
         return (
-            <Link
-              href={link.href}
-              key={link.href}
-              className={isActive ? styles.active : ""}
-            >
-              {link.label}
-            </Link>
+          <Link
+            href={link.href}
+            key={link.href}
+            className={isActive ? styles.active : ""}
+          >
+            {link.label}
+          </Link>
         );
       })}
     </div>
