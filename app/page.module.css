@@ -29,6 +29,23 @@
   padding: 10px;
   margin-right: 20px;
 }
+
+.aboutText{
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+.aboutText::before{
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -55px;
+  width: 40px;
+  height: 40px;
+  background-image: url("/Frame.png");
+}
 .communication {
   display: flex;
   flex-direction: column;
@@ -45,10 +62,20 @@
   margin-bottom: 24px;
 }
 .communicationText {
+  position: relative;
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
   margin-bottom: 5px;
+}
+.communicationText::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -55px;
+  width: 40px;
+  height: 40px;
+  background-image: url("/Chat.png");
 }
 .howItWorks {
   display: flex;
@@ -108,6 +135,7 @@
   line-height: 26px;
   margin-bottom: 5px;
 }
+
 .policyTitle {
   font-size: 16px;
   font-weight: 300;
