@@ -30,7 +30,7 @@ export default function RootLayout({
         <TheHeader />
         {children}
         <TheFooter />
-        {true && (
+        {false && (
           <PopUpAutorisation title="Щоб продовжити далі, авторизуйтеся!" />
         )}
       </body>

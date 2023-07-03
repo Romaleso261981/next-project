@@ -3,7 +3,6 @@ import React from "react";
 import styles from "./page.module.css";
 
 export default function Home() {
-
   return (
     <main className={styles.main}>
       <div className={styles.hero} />
@@ -34,6 +33,21 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.img}></div>
+      </div>
+      <div className={styles.policy}>
+        <div className={styles.policyDescription}>
+          <h1 className={styles.policyTitle}>Політика конфіденційності</h1>
+          <p className={styles.policyText}>
+            Ми не запитуємо ваші персональні дані, вони належать тільки вам. Під
+            час входу у чат ви берете на себе відповідальність за подальше
+            спілкування. Якщо хтось спілкується некорестно, будь ласка,
+            сповістіть нас про це. Ми не збираємо та не зберігааємо інформацію
+            про вашу IP адресу. Вона видаляється автоматично. Ми не
+            використовуємо сервіси аналітики та не пропонуємо вам додаткову
+            рекламу.
+          </p>
+        </div>
+        <div className={styles.policyImg}></div>
       </div>
     </main>
   );

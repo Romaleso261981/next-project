@@ -4,39 +4,63 @@
   justify-content: space-between;
   align-items: center;
 }
-.about{
+.about {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-top: 96px;
 }
-.title{
+.policy {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 96px;
+  margin-bottom: 40px;
+}
+.title {
   font-size: 32px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 24px;
 }
-.aboutText_wrapper{
+.aboutText_wrapper {
   padding: 10px;
   margin-right: 20px;
 }
-.aboutText{
+.policyTitle{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 24px;
+  margin-left: 80px;
+}
+.policyText {
+  padding: 10px;
+  margin-right: 20px;
+  width: 630px;
+  height: 232px;
+}
+.policyImg{
+  background-color: #9a9a9a;
+  width: 630px;
+  height: 320px;
+}
+.aboutText {
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
   margin-bottom: 5px;
 }
 .img {
-  background-color: #9A9A9A;
+  background-color: #9a9a9a;
   width: 630px;
   height: 320px;
 }
 
 .hero {
-  background-color: #9A9A9A;
+  background-color: #9a9a9a;
   width: 1440px;
   height: 320px;
 }
-
-
