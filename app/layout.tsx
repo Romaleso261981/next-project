@@ -25,7 +25,6 @@ export default function RootLayout({
   const [isPopUp, setIsPopUp] = React.useState(false);
   const [isAuthPopUp, setisAuthPopUp] = React.useState(false);
 
-
   function setIsPopUpOpen() {
     setIsPopUp(true);
   }
@@ -35,15 +34,12 @@ export default function RootLayout({
     setIsPopUpAuth();
   }
 
-
   function setIsPopUpAuth() {
     setTimeout(() => {
       localStorage.setItem("isAuth", "true");
       setisAuthPopUp(false);
-     }, 2000);
+    }, 2000);
   }
-
-  
 
   return (
     <html lang="en">
@@ -59,7 +55,12 @@ export default function RootLayout({
         )}
         {isAuthPopUp && (
           <IsAuthPopUp
-            text="Ви будете перенаправлені на головну сторінку"
+            text=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore odit
+          ipsam aliquam. Omnis sed voluptatem fuga eos quam eum natus.
+          Voluptatem laborum pariatur debitis eveniet voluptates quasi sequi
+          odio? Minus adipisci incidunt perspiciatis sunt nesciunt labore est,
+          at, consectetur expedita ducimus autem voluptates earum neque sequi ea
+          nostrum maiores porro?"
             title="Дякуємо що авторизувались"
           />
         )}
