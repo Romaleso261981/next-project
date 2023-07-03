@@ -1,3 +1,4 @@
+import { Stint_Ultra_Condensed } from "next/font/google";
 import React from "react";
 
 import styles from "./page.module.css";
@@ -6,7 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.hero} />
-      <div className={styles.about}>
+      <section className={styles.about}>
         <div className={styles.description}>
           <h1 className={styles.title}>Що таке НАШChat?</h1>
           <div className={styles.text}>
@@ -33,8 +34,61 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.img}></div>
-      </div>
-      <div className={styles.policy}>
+      </section>
+      <section className={styles.howItWorks}>
+        <h2 className={styles.howItWorksTitle}>Як це працює?</h2>
+        <div className={styles.howItWorksCardWrapper}>
+          <div className={styles.howItWorksCard}>
+            <div className={styles.howItWorksImg}></div>
+            <h3 className={styles.howItWorksCardTitle}>Спілкуйся</h3>
+            <p className={styles.howItWorksCardText}>
+              Анонімне спілкування з користувачами за спільними інтересами.
+              Використай цю можливість, щоб дізнатися щось корисне!
+            </p>
+          </div>
+          <div className={styles.howItWorksCard}>
+            <div className={styles.howItWorksImg}></div>
+            <h3 className={styles.howItWorksCardTitle}>Запрошуй</h3>
+            <p className={styles.howItWorksCardText}>
+              Запрошуй друзів та знайомих, використовуй анонімне спілкування,
+              щоб дізнатися справжню думку оточуючих!
+            </p>
+          </div>
+          <div className={styles.howItWorksCard}>
+            <div className={styles.howItWorksImg}></div>
+            <h3 className={styles.howItWorksCardTitle}>Створюй</h3>
+            <p className={styles.howItWorksCardText}>
+              Створюй нові чат кімнати для обговорення важливих та цікавих тем.
+              Стань генератором нових супер ідей!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className={styles.communication}>
+        <h1 className={styles.communicationTitle}>
+          Спілкування в чат кімнатах
+        </h1>
+
+        <div className={styles.communicationDescription}>
+          <ul className={styles.communicationText_wrapper}>
+            <li className={styles.communicationText}>
+              Анонімне спілкування за спільними інтересами
+            </li>
+            <li className={styles.communicationText}>
+              Тематика кімнат написана в описі чат кімнати
+            </li>
+            <li className={styles.communicationText}>
+              Максимальна кількість повідомлень - 500 шт. Після цього ваші
+              повідомлення видаляються до кількості 250 шт
+            </li>
+            <li className={styles.communicationText}>
+              Якщо у вас є пропозиції щодо створення нових чат кімнат - напишіть
+              нам у Підтримку
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className={styles.policy}>
         <div className={styles.policyDescription}>
           <h1 className={styles.policyTitle}>Політика конфіденційності</h1>
           <p className={styles.policyText}>
@@ -48,7 +102,7 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.policyImg}></div>
-      </div>
+      </section>
     </main>
   );
 }
