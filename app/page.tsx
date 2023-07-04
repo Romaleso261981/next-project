@@ -2,6 +2,27 @@ import React from "react";
 
 import styles from "./page.module.css";
 
+export const dataCard = [
+  {
+    id: 1,
+    images: "",
+    title: "Спілкуйся",
+    text: "Анонімне спілкування з користувачами за спільними інтересами. Використай цю можливість, щоб дізнатися щось корисне!",
+  },
+  {
+    id: 2,
+    images: "",
+    title: "Запрошуй",
+    text: "Запрошуй друзів та знайомих, використовуй анонімне спілкування,щоб дізнатися справжню думку оточуючих!",
+  },
+  {
+    id: 3,
+    images: "",
+    title: "Створюй",
+    text: "Створюй нові чат кімнати для обговорення важливих та цікавих тем. Стань генератором нових супер ідей!",
+  },
+];
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -37,28 +58,15 @@ export default function Home() {
       <section className={styles.howItWorks}>
         <h2 className={styles.howItWorksTitle}>Як це працює?</h2>
         <div className={styles.howItWorksCardWrapper}>
+          {/* {{dataCard.map((item) => (
+            <CardItem key={item.id} {...item} />
+          ))}} */}
           <div className={styles.howItWorksCard}>
             <div className={styles.howItWorksImg}></div>
             <h3 className={styles.howItWorksCardTitle}>Спілкуйся</h3>
             <p className={styles.howItWorksCardText}>
               Анонімне спілкування з користувачами за спільними інтересами.
               Використай цю можливість, щоб дізнатися щось корисне!
-            </p>
-          </div>
-          <div className={styles.howItWorksCard}>
-            <div className={styles.howItWorksImg}></div>
-            <h3 className={styles.howItWorksCardTitle}>Запрошуй</h3>
-            <p className={styles.howItWorksCardText}>
-              Запрошуй друзів та знайомих, використовуй анонімне спілкування,
-              щоб дізнатися справжню думку оточуючих!
-            </p>
-          </div>
-          <div className={styles.howItWorksCard}>
-            <div className={styles.howItWorksImg}></div>
-            <h3 className={styles.howItWorksCardTitle}>Створюй</h3>
-            <p className={styles.howItWorksCardText}>
-              Створюй нові чат кімнати для обговорення важливих та цікавих тем.
-              Стань генератором нових супер ідей!
             </p>
           </div>
         </div>

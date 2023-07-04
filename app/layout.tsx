@@ -31,14 +31,6 @@ export default function RootLayout({
   function setIsPopUpCloset() {
     setIsPopUp(false);
     setisAuthPopUp(true);
-    setIsPopUpAuth();
-  }
-
-  function setIsPopUpAuth() {
-    setTimeout(() => {
-      localStorage.setItem("isAuth", "true");
-      setisAuthPopUp(false);
-    }, 2000);
   }
 
   return (
@@ -62,6 +54,7 @@ export default function RootLayout({
           at, consectetur expedita ducimus autem voluptates earum neque sequi ea
           nostrum maiores porro?"
             title="Дякуємо що авторизувались"
+            setisAuthPopUp={setisAuthPopUp}
           />
         )}
       </body>
