@@ -1,0 +1,44 @@
+.howItWorks {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 1280px;
+  height: 398px;
+  margin-top: 96px;
+}
+.howItWorksCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 413px;
+  height: 314px;
+  background: linear-gradient(
+      151.35deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 214, 0, 0.8) 68.64%
+    ),
+    linear-gradient(
+      238.31deg,
+      rgba(255, 142, 0, 0.4) 3.37%,
+      rgba(255, 255, 239, 0.4) 91.86%
+    );
+}
+.howItWorksImg {
+  width: 100px;
+  height: 100px;
+  background-color: #9a9a9a;
+}
+.howItWorksCardTitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+.howItWorksCardText {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 5px;
+}

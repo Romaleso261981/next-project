@@ -1,29 +1,23 @@
-import React from 'react'
+import React from "react";
 
-export default function CardItem({}) {
+import styles from "./CardItem.module.css";
+
+type CardItemProps = {
+  id: number;
+  images: string;
+  title: string;
+  text: string;
+};
+
+export default function CardItem({ images, title, text }: CardItemProps) {
+  console.log(images, title, text);
+
   return (
-    <div>CardItem</div>
-  )
+    <div className={styles.howItWorksCard}>
+      <div className={styles.howItWorksImg}></div>
+      <div>{images}</div>
+      <div className={styles.howItWorksCardTitle}>{title}</div>
+      <div className={styles.howItWorksCardText}>{text}</div>
+    </div>
+  );
 }
-
-
-export const dataCard = [
-  {
-    id: 1,
-    images: "",
-    title: "Спілкуйся",
-    text: "Анонімне спілкування з користувачами за спільними інтересами. Використай цю можливість, щоб дізнатися щось корисне!",
-  },
-  {
-    id: 2,
-    images: "",
-    title: "Запрошуй",
-    text: "Запрошуй друзів та знайомих, використовуй анонімне спілкування,щоб дізнатися справжню думку оточуючих!",
-  },
-  {
-    id: 3,
-    images: "",
-    title: "Створюй",
-    text: "Створюй нові чат кімнати для обговорення важливих та цікавих тем. Стань генератором нових супер ідей!",
-  },
-];
