@@ -10,7 +10,6 @@ type CardItemProps = {
 };
 
 export default function CardItem({ images, title, text }: CardItemProps) {
-  console.log(images, title, text);
 
   return (
     <div className={styles.howItWorksCard}>
